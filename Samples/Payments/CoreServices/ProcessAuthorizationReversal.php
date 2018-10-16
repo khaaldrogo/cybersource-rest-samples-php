@@ -12,7 +12,7 @@ function ProcessAuthorizationReversal()
 	$apiclient = new CyberSource\ApiClient($config);
 	$api_instance = new CyberSource\Api\ReversalApi($apiclient);
 
-  $id = '5337069774856224603522';
+  $id = '5395980787496554703002';
 	$cliRefInfoArr = [
     'code' => 'TC50171_3'
   ];

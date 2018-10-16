@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 require_once('../CybersourceRestclientPHP/autoload.php');
 require_once('../CybersourceRestclientPHP/ExternalConfig.php');
 
-function RetrieveAllPaymentsIdentifierforgivenInstrumentIdentifier()
+function RetrieveAllPaymentsIdentifierForGivenInstrumentIdentifier()
 {
 	$commonElement = new CyberSource\ExternalConfig();
 	$config = $commonElement->ConnectionHost();
@@ -26,7 +26,7 @@ function RetrieveAllPaymentsIdentifierforgivenInstrumentIdentifier()
 // Call Sample Code
 if(!defined('DO NOT RUN SAMPLE')){
     echo "Samplecode is Running..";
-	RetrieveAllPaymentsIdentifierforgivenInstrumentIdentifier();
+	RetrieveAllPaymentsIdentifierForGivenInstrumentIdentifier();
 
 }
 ?>	

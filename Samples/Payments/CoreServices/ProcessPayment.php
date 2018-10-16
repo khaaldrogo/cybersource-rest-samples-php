@@ -48,7 +48,7 @@ function ProcessPayment()
 
   $order_information = new CyberSource\Model\V2paymentsOrderInformation($orderInfoArry);
   $paymentCardInfo = [
-    "number" => "4111111111111111",
+    "number" => "5555555555554444",
     "expirationMonth" => "12",
     "expirationYear" => "2031",
     "type" => "002",

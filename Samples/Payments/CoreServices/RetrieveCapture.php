@@ -11,7 +11,7 @@ function RetrieveCapture()
   $config = $commonElement->ConnectionHost();
   $apiclient = new CyberSource\ApiClient($config);
   $api_instance = new CyberSource\Api\CaptureApi($apiclient);
-  $id = '5350275921706258204002';
+  $id = '5395980787496554703002';
   $api_response = list($response,$statusCode,$httpHeader)=null;
   try {
     $api_response = $api_instance->getCapture($id);

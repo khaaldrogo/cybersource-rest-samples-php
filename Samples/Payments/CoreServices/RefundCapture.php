@@ -11,7 +11,7 @@ function RefundCapture()
 	$config = $commonElement->ConnectionHost();
 	$apiclient = new CyberSource\ApiClient($config);
 	$api_instance = new CyberSource\Api\RefundApi($apiclient);
-  $id = '5336247664156712803527';
+  $id = '5395980787496554703002';
 	$cliRefInfoArr = [
     "code" => "Testing-Payments-Refund"
   ];
