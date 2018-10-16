@@ -61,7 +61,7 @@ function ProcessCredit()
   $paymentRequest = new CyberSource\Model\CreateCreditRequest($paymentRequestArr);
   $api_response = list($response,$statusCode,$httpHeader)=null;
   try {
-    $api_response = $api_instance->createCredit($paymentRequest);
+    $api_response = $api_instance->createCreditWithHttpInfo($paymentRequest);
 		print_r($api_response);
 
 	} catch (Exception $e) {

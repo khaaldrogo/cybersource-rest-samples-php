@@ -11,7 +11,7 @@ function RetrieveACredit()
   $config = $commonElement->ConnectionHost();
   $apiclient = new CyberSource\ApiClient($config);
   $api_instance = new CyberSource\Api\CreditApi($apiclient);
-  $id = '5350275921706258204002';
+  $id = '5396722311326403603004';
   $api_response = list($response,$statusCode,$httpHeader)=null;
   try {
     $api_response = $api_instance->getCredit($id);

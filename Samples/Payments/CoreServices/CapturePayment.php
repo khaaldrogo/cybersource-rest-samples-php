@@ -11,7 +11,7 @@ function CapturePayment()
 	$config = $commonElement->ConnectionHost();
 	$apiclient = new CyberSource\ApiClient($config);
 	$api_instance = new CyberSource\Api\CaptureApi($apiclient);
-  $id = '5350275921706258204002';
+  $id = '5395968926396448503003';
 	$cliRefInfoArr = [
     "code" => "TC50171_3"
   ];

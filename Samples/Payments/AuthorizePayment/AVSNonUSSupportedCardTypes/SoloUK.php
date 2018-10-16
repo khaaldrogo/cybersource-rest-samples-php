@@ -19,15 +19,15 @@ function SoloUK()
 
   $subMerchantArr = [
     "cardAcceptorId" => "1234567890",
-      "country" => "US",
-      "phoneNumber" => "650-432-0000",
-      "address1" => "900 Metro Center",
-      "postalCode" => "94404-2775",
-      "locality" => "Foster City",
-      "name" => "Visa Inc",
-      "administrativeArea" => "CA",
-      "region" => "PEN",
-      "email" => "test@cybs.com" 
+    "country" => "US",
+    "phoneNumber" => "650-432-0000",
+    "address1" => "900 Metro Center",
+    "postalCode" => "94404-2775",
+    "locality" => "Foster City",
+    "name" => "Visa Inc",
+    "administrativeArea" => "CA",
+    "region" => "PEN",
+    "email" => "test@cybs.com" 
   ];
 
   $subMerchant = new CyberSource\Model\V2paymentsAggregatorInformationSubMerchant($subMerchantArr);
@@ -46,23 +46,23 @@ function SoloUK()
   
   $billtoArr = [
     "country" => "US",
-      "lastName" => "VDP",
-      "address2" => "Address 2",
-      "address1" => "201 S. Division St.",
-      "postalCode" => "48104-2201",
-      "locality" => "Ann Arbor",
-      "administrativeArea" => "MI",
-      "firstName" => "RTS",
-      "phoneNumber" => "999999999",
-      "district" => "MI",
-      "buildingNumber" => "123",
-      "company" => "Visa",
-      "email" => "test@cybs.com"
+    "lastName" => "VDP",
+    "address2" => "Address 2",
+    "address1" => "201 S. Division St.",
+    "postalCode" => "48104-2201",
+    "locality" => "Ann Arbor",
+    "administrativeArea" => "MI",
+    "firstName" => "RTS",
+    "phoneNumber" => "999999999",
+    "district" => "MI",
+    "buildingNumber" => "123",
+    "company" => "Visa",
+    "email" => "test@cybs.com"
   ];
   $billto = new CyberSource\Model\V2paymentsOrderInformationBillTo($billtoArr);
   $amountDetailsArr = [
     "totalAmount" => "106.00",
-      "currency" => "USD"
+    "currency" => "USD"
   ];
   $amountDetInfo = new CyberSource\Model\V2paymentsOrderInformationAmountDetails($amountDetailsArr);
   $orderInfoArry = [
@@ -73,10 +73,10 @@ function SoloUK()
   $order_information = new CyberSource\Model\V2paymentsOrderInformation($orderInfoArry);
   $paymentCardInfo = [
     "expirationYear" => "2031",
-      "number" => "6334580500000000",
-      "securityCode" => "123",
-      "expirationMonth" => "12",
-      "type" => "024"
+    "number" => "6334580500000000",
+    "securityCode" => "123",
+    "expirationMonth" => "12",
+    "type" => "024"
   ];
   $card = new CyberSource\Model\V2paymentsPaymentInformationCard($paymentCardInfo);
   $paymentInfoArr = [

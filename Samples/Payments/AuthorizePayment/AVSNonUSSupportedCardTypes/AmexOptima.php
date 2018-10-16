@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 require_once('../CybersourceRestclientPHP/autoload.php');
 require_once('../CybersourceRestclientPHP/ExternalConfig.php');
 
-function AmexaOptima()
+function AmexOptima()
 {
 	$commonElement = new CyberSource\ExternalConfig();
 	$config = $commonElement->ConnectionHost();
@@ -19,16 +19,16 @@ function AmexaOptima()
 
   $billtoArr = [
     "country" => "US",
-      "firstName" => "RTS",
-      "lastName" => "VDP",
-      "phoneNumber" => "6504327113",
-      "address2" => "Desk M3-5573",
-      "address1" => "901 Metro Center Blvd",
-      "postalCode" => "94404",
-      "locality" => "Foster City",
-      "company" => "Visa",
-      "administrativeArea" => "CA",
-      "email" => "test@cybs.com"
+    "firstName" => "RTS",
+    "lastName" => "VDP",
+    "phoneNumber" => "6504327113",
+    "address2" => "Desk M3-5573",
+    "address1" => "901 Metro Center Blvd",
+    "postalCode" => "94404",
+    "locality" => "Foster City",
+    "company" => "Visa",
+    "administrativeArea" => "CA",
+    "email" => "test@cybs.com"
   ];
   $billto = new CyberSource\Model\V2paymentsOrderInformationBillTo($billtoArr);
   $amountDetailsArr = [
@@ -44,9 +44,9 @@ function AmexaOptima()
   $order_information = new CyberSource\Model\V2paymentsOrderInformation($orderInfoArry);
   $paymentCardInfo = [
     "expirationYear" => "2031",
-      "number" => "372425119311008",
-      "securityCode" => "123",
-      "expirationMonth" => "12"
+    "number" => "372425119311008",
+    "securityCode" => "123",
+    "expirationMonth" => "12"
   ];
   $card = new CyberSource\Model\V2paymentsPaymentInformationCard($paymentCardInfo);
   $paymentInfoArr = [
@@ -76,7 +76,7 @@ function AmexaOptima()
 // Call Sample Code
 if(!defined('DO NOT RUN SAMPLE')){
     echo "Samplecode is Running..";
-	AmexaOptima();
+	AmexOptima();
 
 }
 

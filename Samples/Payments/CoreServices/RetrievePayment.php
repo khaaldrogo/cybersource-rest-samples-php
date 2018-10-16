@@ -11,14 +11,13 @@ function RetrievePayment()
   $config = $commonElement->ConnectionHost();
   $apiclient = new CyberSource\ApiClient($config);
   $api_instance = new CyberSource\Api\PaymentApi($apiclient);
-  $id = '5350275921706258204002';
+  $id = '5395968926396448503003';
   $api_response = list($response,$statusCode,$httpHeader)=null;
   try {
     $api_response = $api_instance->getPayment($id);
     echo "<pre>";print_r($api_response);
 
   } catch (Exception $e) {
-    print_r($e->getresponseBody());
     print_r($e->getmessage());
   }
 }    
